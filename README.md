@@ -1,27 +1,27 @@
 # Terrraform GitHub Actions AWS
 
-This README serves as an in-depth guide on how to deploy an RKE2 (Rancher Kubernetes Engine) cluster on AWS using a Terraform module. This module handles the configuration and deployment of the RKE2 server and agent nodes, along with supporting the installation of Rancher, ArgoCD, and Istio.
+This README serves as an placeholder for the terraform github actions demo.
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Codebase Overview](#codebase-overview)
+- [Overview](#Overview)
 - [Environmental Configuration](#environmental-configuration)
-- [Step-by-Step Deployment Guide](#step-by-step-deployment-guide)
-- [Accessing the Deployed Services](#accessing-the-deployed-services)
 
 ## Prerequisites
 
-Before proceeding with the deployment of the RKE2 cluster, ensure you have the following prerequisites in place:
+Before proceeding with the demo, please ensure you have the following prerequisites in place:
 
-1. Terraform 
+1. Terraform (installed) 
 
 2. Terraform Cloud account
 
-3. AWS Account & CLI: 
+3. AWS Account
+
+4. AWS CLI (optional)
 
 
-## Codebase Overview
+## Overview
 
 ![tf-github-actions-aws.jpg](tf-github-actions-aws.jpg)
 
@@ -30,16 +30,14 @@ Before proceeding with the deployment of the RKE2 cluster, ensure you have the f
 
 To provision the infrastructure using this Terraform module, follow these steps:
 
-1. **Initialize Terraform**
+1. ** Terraform Initialise **
 
-2. **Plan Your Infrastructure**
+2. ** Terraform plan **
 
 3. **Apply the Infrastructure Changes**
 
 The `terraform apply` command executes the actions proposed in a Terraform plan.
 
-
-
-
-
+4. Once you happy with changes, checkin to GitHub.
+This will push the changes to GitHub which will trigger a workflow.
 
